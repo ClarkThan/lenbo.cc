@@ -1,0 +1,58 @@
+title: Come as you are
+description: My Stack House
+author: Clark Than
+github: https://github.com/ClarkThan/lenbo.cc
+about: Stay hungry. Stay foolish.
+google_analytics: UA-XXXXXXXX-Y
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+icon:
+  category: fa-folder
+  tag: fa-tag
+  nav: fa-map
+
+social:
+    - icon: fa-pinterest
+      link: "http://www.pinterest.com/clarkthan"
+    - icon: fa-twitter
+      link: "https://twitter.com/clarkthan"
+    - icon: fa-instagram
+      link: "http://www.instagram.com/clarkthan"
+    - icon: fa-github
+      link: "http://github.com/ClarkThan"
+
+share:
+  twitter_username: clarkthan
+  fb_appid: 100002242190047
+
+urls:
+    - text: Home
+      url: /
+    - text: 分类
+      url: /category/
+    - text: 关于
+      url: /about/
+    - text: 项目
+      url: /projects/
+    - text: Feed
+      url: /feed.xml
+
+url: "https://lenbo.cc"
+baseurl: ""
+paginate: 15
+per_page: 15
+paginate_path: "/page:num/"
+permalink: /:year-:month/:title.html
+markdown: kramdown
+markdown_ext: markdown,md,mkd,mkdn
+highlighter: rouge
+plugins:
+  - jekyll-paginate
+  - jekyll-feed

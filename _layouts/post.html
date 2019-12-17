@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<span class="time">{{ page.date | date_to_string }}</span>
+{% if page.categories %}
+<span class="categories">
+    &nbsp;&nbsp; <span class="fa fa-folder"></span>&nbsp;{% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %},&nbsp;{% endif %}{% endfor %}
+</span>
+{% endif %}
+
+<div class="content">
+    <div class="post">{{ content }}</div>
+    <!--国内无法分享至google+ twitter facebook, 故注释掉 include share-page.html -->
+	<p class="license">本作品由 <a href="{{ site.url }}">Clark Than</a> 创作，采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a> 进行许可。</p>
+</div>
+
+
+{% assign hasSimilar = '' %}
+{% for post in site.posts  %}
+    {% assign postHasSimilar = false %}
+    {% for tag in post.categories %}
+        {% for thisTag in page.categories %}
+            {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+                {% if hasSimilar.size == 0 %}
+                <div class="panel-body">
+                <h4>相关文章:</h4>
+                <ul>
+                {% endif %}
+                <li class="relatedPost">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    {% if post.categories %}
+                        (<i class="fa {{ site.icon.tag }}"></i>分类: {% for category in post.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %})
+                    {% endif %}
+                </li>
+                {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                {% assign postHasSimilar = true %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% if hasSimilar.size > 0 %}
+    </ul>
+    </div>
+{% endif %}
+
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev btn btn-default" href="{{ page.previous.url }}" title="{{ page.previous.title }}"><-Previous</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next btn btn-default" href="{{ page.next.url }}" title="{{ page.next.title }}">Next-></a>
+  {% endif %}
+</div>

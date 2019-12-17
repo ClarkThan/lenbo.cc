@@ -1,0 +1,327 @@
+/**
+ * Master styling
+ */
+/**
+ * 文章主体   font-family: "Roboto Condensed", Arial, sans-serif;
+ * 'Inconsolata', 'lucida grande', 'lucida sans unicode', lucida, 'Helvetica Neue', helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+ */
+body {
+	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: #333;
+    font-weight: 300;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #F7F1F1;
+    border-bottom: 1px solid #fff;
+}
+
+/**
+ * Font and link declarations
+ */
+/**
+ * 文章顶部
+ */
+span.time, span.categories {
+    color: #ADADAD;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/**
+ * 标题和博主名
+ */
+h1 {
+    font-weight: normal;
+    color: #101010;
+    margin-bottom: 10px;
+    font-size: 30px;
+	font-family: 'Inconsolata', 'lucida grande', 'lucida sans unicode', lucida, 'Helvetica Neue', helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;	
+}
+/*正文标题*/
+div.col-sm-8 h1 {
+	color: #8B008B;
+}
+div#home h1 {
+	color: #9400D3;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #666666;
+}
+        
+h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+blockquote {
+	background-color: #fef3f3;
+	border-left: 4px solid #d6a6a6;
+	margin: 0;
+}
+
+.license {
+	font-family: 'Microsoft YaHei';
+	font-size: 12px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+div.col-sm-8 img {
+	border: 1px solid #9400D3;
+	box-shadow: 12px 12px 6px #888888;
+}
+
+/*
+*链接
+*或者 #F62459 ->  #0a5  红变绿
+*     #e74c3  ->  #2ecc71  橙变绿
+*/
+a, a:link, a:active {
+    text-decoration: none;
+    color: #674ea7;
+}
+
+/*文章内的a链接*/
+.post a {
+	color: #0000FF;
+}
+
+.post a:visited {
+	color: #
+}
+
+/*首页文章列表*/
+.posts li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+/*扫过链接*/
+a:hover {
+    color: #6a3093;
+    text-decoration: underline;
+}
+
+/**
+ * /////////////////
+ * Container element
+ * /////////////////
+ */
+div#container {
+    width: 700px;
+    margin: auto;
+}
+
+/**
+ * //////////////////////////////////
+ * Right aka content column formatting
+ * //////////////////////////////////
+ */
+div.right {
+    width: 500px;
+    float: left;
+}
+
+/*文章正文(不含标题 日期 分类)*/           
+div.content {
+    border-top: 1px solid #E6E6E6;
+    margin-top: 5px;
+    padding-top: 5px;
+	color: #2b2b2b;
+}
+
+/**
+ * pre code 代码
+ */
+div.content pre{
+    background: #333333;
+    padding: 10px;
+    color: #FFF;
+    overflow-x: auto;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 13px;
+    border: none;
+}
+
+/*代码背景色*/
+div.content .highlight {
+    background: #333333;
+}
+
+code {
+    font-family: 'Source Code Pro';
+}
+
+/**
+ * copyright @Clark Than
+ */
+footer {
+    border-top: 1px solid #F7F1F1;
+    width: 100%;
+    height: 10px;
+    margin-top: 60px;
+    margin-bottom: 3em;
+    padding-top: 10px;
+    color: #8E8E8E;
+    font-size: 12px;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+
+footer div#github {
+	text-align: right;
+}
+
+div.right h1 {
+	margin-bottom: -2px;
+}
+
+div.right ul {
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+}
+
+div.right ul li {
+	margin-top: 5px;
+	margin-left: 0;
+	padding: 0;
+}
+
+div.right .post ul {
+	list-style: square;
+	margin-left: 15px;
+}
+
+/*相关文章*/
+div.panel-body {
+	margin-bottom: 20px;
+}
+
+div.col-sm-8 {
+    background: #FFF0FF;
+}
+
+/**
+ * Left column aka nav bar formatting
+ * description 描述
+ */
+div.col-sm-3 {
+        /*margin-top: 40px;*/
+        font-size: 14px;
+        color: #666;
+}
+
+/*Navigation导航*/
+div.col-sm-3 strong {
+        font-size: 16px;
+        color: #000000;
+        font-weight: normal;
+}
+
+div.col-sm-3 div#about {
+        margin-top: 10px;
+		color: #8C8C8C;
+}
+/*左面版中的a链接#6a3093*/
+div.col-sm-3 a {
+	font-size: 20px;
+	color: #000000;
+}
+div.col-sm-3 a:hover {
+	font-weight: lighter;
+	color: #674ea7;
+}
+
+div.col-sm-3 img#about {
+    -webkit-border-radius: 150px;
+	margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-default .badge {
+    color: #ffffff;
+    background-color: #9966cc;
+}
+
+.PageNavigation {
+    font-size: 12px;
+    display: block;
+    width: auto;
+    overflow: hidden;
+}
+/*    
+*width: 50%;
+*float: left;
+*/
+.PageNavigation a {
+    display: block;   
+    margin: 1em 0;
+}
+
+.PageNavigation .next {
+	float: right;
+    text-align: right;
+}
+.PageNavigation .prev {
+	float: left;
+    text-align: left;
+}
+
+.social{
+    display: block;
+    margin: 10px 0;
+}
+.social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+/*可设置社交图标大小*/
+.social li a {
+    font-size: 32px;
+	color: #674ea7;
+}
+
+/*搜索框*/
+ul.search__results a {
+	color: #999;
+	font-size: 14px;
+}
+
+.share-page {
+    padding: 10px 10px 5px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.post-content img, .content img {max-width: 100%}
+
+/* Responsive Conditional */
+@media (min-width: 1024px) {
+    .fixed-condition {
+        position: fixed;
+        max-width: 255px;
+    }
+}
+@media (max-width: 768px) {
+    div.col-sm-3 {
+        margin-top: 30px;
+    }
+}
