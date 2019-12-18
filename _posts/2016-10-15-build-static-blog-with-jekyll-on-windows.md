@@ -41,7 +41,7 @@ gem install bundler                          (安装bundle)
 
 
 
-![local git](/uploads/2016-10/local_git_directory.png "本机git目录")
+![local git](/uploads/2016-10/local_git_directory_cp.png "本机git目录")
 
 进入目录， 可以看到目录中__Gemfile__和__Gemfile.lock__两个文件，分别修改里面的gem源地址为`https://gems.ruby-china.com`，这两个文件中记录了该主题所需的所有插件及其版本信息，所以接下来就是依据这俩文件来安装对应版本的插件了.
 执行命令`bundle install`(如果是年久失修的执行: `bundle update`). 如果安装过程中出现错误（通常是缺失build tools）则可按如下操作：
@@ -80,7 +80,7 @@ git push -u origin gh-pages    (然后就可以向远程分支进行推送了)
 推送完成之后 在github上你就能看得和本机相同的git目录了.
 
 
-![github目录](/uploads/2016-10/github_directory.png "github目录")
+![github目录](/uploads/2016-10/github_directory_cp.png "github目录")
 
 
 
@@ -101,7 +101,7 @@ git push -u origin gh-pages
 进入dnspod域名管理面板, 给`lenbo.cc`添加一条A记录其IP地址映射到`192.30.252.153`(此IP并不固定请使用 `dig pages.github.com` 命令获取最新)
 
 
-![ping domain](/uploads/2016-10/ping_domain.png "ping domain test")
+![ping domain](/uploads/2016-10/ping_domain_cp.png "ping domain test")
 
 
 

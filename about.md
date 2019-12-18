@@ -6,4 +6,4 @@ permalink: /about/
 
 Loving Python.
 
-email: lenplex[at]gmail.com
+email: lenplex@gmail.com

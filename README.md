@@ -21,4 +21,4 @@
 
 #### Screenshot
 
-![Screenshot](https://github.com/ClarkThan/lenbo.cc/blob/gh-pages/static/img/screenshot-post-page.png  "Page Screenshot")
+![Screenshot](https://github.com/ClarkThan/lenbo.cc/blob/gh-pages/static/img/screenshot-post-page-1.png  "Page Screenshot")
