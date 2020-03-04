@@ -27,19 +27,16 @@ Functional Programming in OCaml
 
 
 
-
-
 ## 目录
 
-- 1. Introduction
+- [x] 1. [Introduction](/2020-02/functional-programming-in-ocaml-ch1.html)
   - 1.1. Programming Languages
   - 1.2. OCaml
   - 1.3. Mutability
   - 1.4. Summary
   - 1.5. Exercises
   - 1.6. A Brief History of CS 3110
-
-- 2. The Basics of OCaml
+- [x] 2. [The Basics of OCaml](/2020-03/functional-programming-in-ocaml-ch2.html)
   - 2.1. Interacting with OCaml
   - 2.2. Expressions
     - 2.2.1. Operators
@@ -60,28 +57,18 @@ Functional Programming in OCaml
     - 2.4.2. Defensive Programming
   - 2.5. Summary
   - 2.6. Exercises
-
-- 3. Data in OCaml
+- [ ] 3. Data in OCaml
   - 3.1. Standard Data Types
   - 3.2. Advanced Data Types
   - 3.3. Summary
   - 3.4. Exercises
-
-- 4. Higher-order Programming
-
-- 5. Modules
-
-- 6. Specifications and Abstraction
-
-- 7. Testing
-
-- 8. Mutability
-
-- 9. Efficiency
-
-- 10. Interpreters
-
-- 11. Formal Methods
-
-- 12. Advanced Topics
+- [ ] 4. Higher-order Programming
+- [ ] 5. Modules
+- [ ] 6. Specifications and Abstraction
+- [ ] 7. Testing
+- [ ] 8. Mutability
+- [ ] 9. Efficiency
+- [ ] 10. Interpreters
+- [ ] 11. Formal Methods
+- [ ] 12. Advanced Topics
 
