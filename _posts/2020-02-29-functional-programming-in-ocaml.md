@@ -57,7 +57,7 @@ Functional Programming in OCaml
     - 2.4.2. Defensive Programming
   - 2.5. Summary
   - 2.6. Exercises
-- [ ] 3. Data in OCaml
+- [x] 3. [Data in OCaml](/2020-03/functional-programming-in-ocaml-ch3.html)
   - 3.1. Standard Data Types
   - 3.2. Advanced Data Types
   - 3.3. Summary

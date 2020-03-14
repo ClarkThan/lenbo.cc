@@ -19,19 +19,19 @@ tags:            OCaml PL
 
 ## 语法
 
-*语法 *是指使用形式优良的文本来构成程序的规则，包括关键字，对空格和格式的限制，标点，运算符等。学习一种门新语言的一个更烦人的方面可能是: 相比于你已经知道的语言, 新语言的语法显得更奇怪。 但是，随着你学习的语言越多，就会越习惯接受该语言的语法就是这样而不是希望它有所不同。 （如果你想查看某些语法不寻常的语言，请看一下 [APL](http://tryapl.org/)，它需要自己的扩展键盘，以及 Whitespace，其中的程序完全由空格，制表符和换行符组成。）你需要理解语法，以便 完全可以和电脑说话。
+*语法* 是指使用形式优良的文本来构成程序的规则，包括关键字，对空格和格式的限制，标点，运算符等。学习一种门新语言的一个更烦人的方面可能是: 相比于你已经知道的语言, 新语言的语法显得更奇怪。 但是，随着你学习的语言越多，就会越习惯接受该语言的语法就是这样而不是希望它有所不同。 （如果你想查看某些语法不寻常的语言，请看一下 [APL](http://tryapl.org/)，它需要自己的扩展键盘，以及 Whitespace，其中的程序完全由空格，制表符和换行符组成。）你需要理解语法，以便 完全可以和电脑说话。
 
 ## 语义
 
-You need to understand semantics to say what you mean to the computer, and you need to say what you mean so that your program performs the right computation.*语义*是指定义程序行为的规则。 换句话说，语义是关于程序的含义的--特定语法段表示特定的某种计算。 语义有两部分，*动态*语义和*静态*语义。 动态语义定义了程序在执行或求值计算时的运行时行为。 静态语义定义了编译时检查，以确保程序合法，超出了任何语法要求。 最重要的一种静态语义可能是*类型检查(type checking)*：定义程序是否是well typed的规则。 学习新语言的语义通常才是真正的挑战，即使语法可能是你必须克服的第一个障碍。 你需要了解语义以传达你想要对计算机表达的含义，还需要表达出期望程序正确执行所要表达的含义。
+You need to understand semantics to say what you mean to the computer, and you need to say what you mean so that your program performs the right computation.*语义* 是指定义程序行为的规则。 换句话说，语义是关于程序的含义的--特定语法段表示特定的某种计算。 语义有两部分，*动态语义* 和 *静态语义*。 动态语义定义了程序在执行或求值计算时的运行时行为。 静态语义定义了编译时检查，以确保程序合法，超出了任何语法要求。 最重要的一种静态语义可能是 *类型检查(type checking)*：定义程序是否是well typed的规则。 学习新语言的语义通常才是真正的挑战，即使语法可能是你必须克服的第一个障碍。 你需要了解语义以传达你想要对计算机表达的含义，还需要表达出期望程序正确执行所要表达的含义。
 
 ## 习惯用法
 
-*习惯用法*是指使用编程语言特性来表达计算的常用方法。 假设你可以在一种语言中以多种方式表达同一种计算，那么你会选择哪种呢？ 有一些方式会比其他的更自然。 精通该语言的程序员偏好某些表达方式。 我们可以通过在语言中有效地使用主导范式（无论它们是命令式, 函数式, 面向对象等）来思考这一问题。 你需要理解习惯用法，以传达出不仅是对计算机还有其他程序员所要表达的含义。 当你以惯用的方式编写代码时，其他程序员将更好地理解你的代码。
+*习惯用法* 是指使用编程语言特性来表达计算的常用方法。 假设你可以在一种语言中以多种方式表达同一种计算，那么你会选择哪种呢？ 有一些方式会比其他的更自然。 精通该语言的程序员偏好某些表达方式。 我们可以通过在语言中有效地使用主导范式（无论它们是命令式, 函数式, 面向对象等）来思考这一问题。 你需要理解习惯用法，以传达出不仅是对计算机还有其他程序员所要表达的含义。 当你以惯用的方式编写代码时，其他程序员将更好地理解你的代码。
 
 ## 库
 
-much of which you would be unable to code up in the language yourself, such as file I/O.*库*是为你编写的代码束，可以使你成为更有效率的程序员，因为你不必重复造轮子。 （有人说 [懒惰是程序员的一种美德](http://threevirtues.com/)。）学习一种新语言的一部分是发现可用的库以及如何使用好它们。 一种语言通常提供一个*标准库*，使你可以访问一组核心功能(其中许多都是如果缺少你将无法使用该语言进行编码，例如文件 I/O)。
+much of which you would be unable to code up in the language yourself, such as file I/O.*库* 是为你编写的代码束，可以使你成为更有效率的程序员，因为你不必重复造轮子。 （有人说 [懒惰是程序员的一种美德](http://threevirtues.com/)。）学习一种新语言的一部分是发现可用的库以及如何使用好它们。 一种语言通常提供一个 *标准库*，使你可以访问一组核心功能(其中许多都是如果缺少你将无法使用该语言进行编码，例如文件 I/O)。
 
 ## 工具
 
@@ -185,7 +185,7 @@ $ ocamlbuild -clean
 
 ## 在toplevel里加载代码
 
-除了允许你定义函数外，toplevel 还将接受不是 OCaml 代码的*指令*(告诉 toplevel 本身进行某些操作)。 所有指令均以 `#` 字符开头。 也许最常见的指令是 `#use`，它会将文件中的所有代码加载到 toplevel，就像你已将该文件中的代码键入到 toplevel 一样。
+除了允许你定义函数外，toplevel 还将接受不是 OCaml 代码的 *指令* (告诉 toplevel 本身进行某些操作)。 所有指令均以 `#` 字符开头。 也许最常见的指令是 `#use`，它会将文件中的所有代码加载到 toplevel，就像你已将该文件中的代码键入到 toplevel 一样。
 
 例如，假设你创建一个名为 `mycode.ml` 的文件。
 在该文件中放入以下代码：
@@ -464,7 +464,7 @@ let x = 5 in
 
 第一个是几乎所有合理的语言都会做的事情。 而且很可能正是你所猜测的，但是，为什么是这样呢？
 
-答案就是我们称之为*名称无关性*的原则：变量的名称本质上不重要。 数学角度上你已经习惯了这样: 例如，这两个函数是相同的：$f(x) = x^2$ ,  $f(y) = y^2$
+答案就是我们称之为 *名称无关性* 的原则：变量的名称本质上不重要。 数学角度上你已经习惯了这样: 例如，这两个函数是相同的：$f(x) = x^2$ ,  $f(y) = y^2$
 
 我们将参数称为 *x* 还是 *y *本质上无关紧要。 无论哪种方式，它都是是平方函数。 因此，在程序中，这两个函数应该是相同的：
 
@@ -473,9 +473,9 @@ let f x = x*x
 let f y = y*y
 ```
 
-the two functions are equivalent up to renaming of variables, which is also called *alpha conversion*, for historical reasons that are unimportant here.此原理更加被人所熟知的名称是 *alpha equivalence* (alpha 等效)：由于变量重命名，这两个函数是等效的。这又被称作  *alpha conversion*, 由于历史原因，此处不重要。
+the two functions are equivalent up to renaming of variables, which is also called *alpha conversion*, for historical reasons that are unimportant here.此原理更加被人所熟知的名称是 *alpha equivalence* (alpha 等效)：由于变量重命名，这两个函数是等效的。这又被称作 *alpha conversion*, 由于历史原因，此处不重要。
 
-根据*不相关名称*原则，这两个表达式应该相同：
+根据 *名称无关性* 原则，这两个表达式应该相同：
 
 ```ocaml
 let x = 6 in x
@@ -534,7 +534,7 @@ val x : int = 22
 - : int = 42  (* x did not mutate! *)
 ```
 
-To summarize, each let definition binds an entirely new variable. If that new variable happens to have the same name as an old variable, the new variable temporarily shadows the old. But the old variable is still around, and its value is immutable: it never, ever changes. So even though let expressions might superficially look like assignment statements from imperative languages, they are actually quite different.总而言之，每个 let定义 都绑定一个全新的变量。 如果该新变量恰好与旧变量具有相同的名称，则新变量会暂时遮盖旧变量。 但是旧变量仍然存在，并且它的值是不变的：它永远不会改变。 因此，即使 let 表达式从表面上看起来像命令式语言的赋值语句，它们实际上大不相同。
+总而言之，每个 let定义 都绑定一个全新的变量。 如果该新变量恰好与旧变量具有相同的名称，则新变量会暂时遮盖旧变量。 但是旧变量仍然存在，并且它的值是不变的：它永远不会改变。 因此，即使 let 表达式从表面上看起来像命令式语言的赋值语句，它们实际上大不相同。
 
 
 
@@ -672,7 +672,7 @@ t1 -> ... -> tn -> u
 val x : int = 42
 ```
 
-同样，OCaml 函数不必具有名称。 他们可能是*匿名*的。 例如，这是一个匿名函数，可对其输入加1： `fun x-> x + 1`。 在这里，`fun` 是表示匿名函数的关键字，`x` 是参数，`->` 将参数与主体分开。
+同样，OCaml 函数不必具有名称。 他们可能是 *匿名* 的。 例如，这是一个匿名函数，可对其输入加1： `fun x-> x + 1`。 在这里，`fun` 是表示匿名函数的关键字，`x` 是参数，`->` 将参数与主体分开。
 
 现在，我们有两种方式可以编写加1函数了：
 
@@ -683,9 +683,9 @@ let inc = fun x -> x+1
 
 它们在语法上是不同的，但在语义上是等效的。 也就是说，即使它们包含不同的关键字并将某些标识符放在不同的位置，它们的含义也相同的。
 
-匿名函数也被称为 *lambda 表达式*，它是来自 *lambda calculus* ( lambda演算) 的术语，它是一个在计算方面与图灵机等价的数学模型。 在 λ 演算中，`fun x-> e` 被写成 `λx.e`。 λ 表示这是一个匿名函数。
+匿名函数也被称为 *lambda 表达式*，它是来自 *lambda calculus* (lambda演算) 的术语，它是一个在计算方面与图灵机等价的数学模型。 在 λ 演算中，`fun x-> e` 被写成 `λx.e`。 λ 表示这是一个匿名函数。
 
-现在似乎有些神秘: 为什么我们想要的函数没有名称。 不用担心 我们将在本课程的后面看到它们的良好用途。 特别是，我们经常会创建匿名函数，并将其作为输入传递给其他函数。
+现在似乎有些神秘: 为什么我们想要的函数没有名称。 不用担心, 我们将在本课程的后面看到它们的良好用途。 特别是，我们经常会创建匿名函数，并将其作为输入传递给其他函数。
 
 **语法.**
 
@@ -713,7 +713,7 @@ fun x1 ... xn -> e
 e0 e1 e2 ... en
 ```
 
-第一个表达式 `e0`是函数，并将其应用于参数 `e1` 到 `en`。 请注意函数应用时，在参数周围不需要 C 系列语言（包括Java）那样使用括号。
+第一个表达式 `e0` 是函数，并将其应用于参数 `e1` 到 `en`。 请注意函数应用时，在参数周围不需要 C 系列语言（包括Java）那样使用括号。
 
 **静态语义.**
 
@@ -977,7 +977,7 @@ let (^^) x y = max x y
 
 # 2.3.7. Documentation
 
-OCaml 提供了一个称为 OCamldoc 的工具，其功能与 Java 的Javadoc 工具非常相似：它从源代码中提取特殊格式的注释，并将其呈现为 HTML，从而使程序员易于阅读文档。
+OCaml 提供了一个称为 OCamldoc 的工具，其功能与 Java 的 Javadoc 工具非常相似：它从源代码中提取特殊格式的注释，并将其呈现为 HTML，从而使程序员易于阅读文档。
 
 ## How to document
 
@@ -1224,7 +1224,7 @@ Warning 10: this expression should have type unit.
 
 但是 `random_int` 要做的最有用的事情是立即揭露前置条件被违反的事实。 毕竟，客户很有可能不是故意违反它。
 
-因此，`random_int` 的实现者会很好地检查是否违反了前置条件，如果违反，则引发异常。 以下是这种*防御性编程*的三种可能性：
+因此，`random_int` 的实现者会很好地检查是否违反了前置条件，如果违反，则引发异常。 以下是这种 *防御式编程* 的三种可能性：
 
 ```ocaml
 (* possibility 1 *)
