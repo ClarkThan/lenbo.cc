@@ -39,8 +39,6 @@ urls:
       url: /category/
     - text: 关于
       url: /about/
-    - text: 项目
-      url: /projects/
     - text: Feed
       url: /feed.xml
 
