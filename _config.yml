@@ -8,11 +8,6 @@ google_analytics: UA-XXXXXXXX-Y
 enableTags: true
 tagarray: []
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
-
 icon:
   category: fa-folder
   tag: fa-tag
@@ -41,6 +36,15 @@ urls:
       url: /about/
     - text: Feed
       url: /feed.xml
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
 
 url: "https://lenbo.cc"
 baseurl: ""
